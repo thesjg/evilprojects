@@ -1,0 +1,7 @@
+development:
+    adapter: postgresql
+    database: evilsjg
+    username: sjg
+    password:
+    host: localhost
+    encoding: utf8

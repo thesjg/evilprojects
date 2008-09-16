@@ -1,0 +1,10 @@
+%h2 New user
+= error_messages_for(@user)
+= form_for(@user, :action => url(:admin_users)) do
+  = text_field(:username, :label => 'Username')
+  = text_field(:name, :label => 'Name')
+  = text_field(:email, :label => 'Email')
+  = text_field(:email_confirmation, :label => 'Verify Email')
+  = password_field(:password, :label => 'Password')
+  = password_field(:password_confirmation, :label => 'Verify Password')
+  = submit('Create')

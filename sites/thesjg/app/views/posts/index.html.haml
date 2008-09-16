@@ -1,0 +1,4 @@
+- if @posts.empty?
+  No posts found.
+- else
+  = partial(:post, :with => @posts)

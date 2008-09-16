@@ -1,0 +1,30 @@
+!!! XML
+!!! Strict
+%html
+  %head
+    %title The SJG
+    = css_include_tag('master')
+    = css_include_tag('form')
+    = js_include_tag('jquery')
+  %body
+    #wrapper
+      %h1#header
+      %span#title
+        %a{ :href => 'http://www.thesjg.net/' } Blog of "The SJG"
+      %span#title_links
+        %a{ :href => 'http://www.evilcode.net/' } Evilcode Corporation
+        %span.pipe_divider | |
+        %a{ :href => 'http://www.evilprojects.net/' } Evil Projects Repository
+      #content
+        #panel
+          = partial('index/panel_about')
+          = partial('index/panel_links')
+          = partial('index/panel_recent')
+        = catch_content()
+        
+    #footer_wrapper
+      %span#footer_text
+        Hosted by
+        %a{ :href => 'http://www.infernalhosting.net/' } Infernal Hosting
+        %span.pipe_divider | |
+        &#169; 2006-2008 Samuel J. Greear
